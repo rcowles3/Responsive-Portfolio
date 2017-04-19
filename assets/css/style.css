@@ -21,42 +21,38 @@ header {
     border-width: .05px;
 }
 
-header h1 {
+#nameLogo {
+    background-color: #4aaaad;
     margin: -2.5px 0px 0px 80px;
     background-color: #4aaaad;
     color: #fff;
     padding: 20px;
     float: left;
-    position: relative;
     font-size: 25px;
+    text-decoration: none;
 }
 
-ul {
+nav {
     float: right;
-    list-style-type: none;
-    margin-left: 780px;
-    background-color: #fff;
-    position: absolute;
+    margin-top: 25px;
+    margin-right: 5%;
 }
 
-li {
-    float: left;
-}
-
-li a {
+nav a {
     text-decoration: none;
     display: inline-block;
-    padding: 20px;
+    padding-left: 15px;
+    margin-left: 15px;
     text-align: center;
     color: #777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-li a:hover {
+nav a:hover {
     color: #4aaaad;
 }
 
-li a:active {
+nav a:active {
     color: #4aaaad;
 }
 
@@ -280,7 +276,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    header h1 {
+    #nameLogo {
         margin-left: 20px;
     }
     section {
@@ -291,6 +287,9 @@ footer {
     .mainContent {
         width: 95%;
         margin-left: -60px;
+    }
+    #bio-image {
+        width: 90%;
     }
     .social {
         clear: both;
@@ -307,5 +306,34 @@ footer {
     }
     hr {
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #nameLogo {
+        background-color: #4aaaa5;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .mainContent {
+        width: 72%;
+    }
+    nav {
+    	/*margin-left: 23.5%;*/
+    	margin-right: 25%;
+    }
+    nav a {
+		padding: 0px 20px 20px 20px;
+		display: inline-block;
+    }
+    #bio-image {
+        width: 90%;
+    }
+    .social {
+        width: 75%;
+    }
+    footer {
+        width: 100%;
     }
 }
