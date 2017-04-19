@@ -317,11 +317,11 @@ footer {
         text-align: center;
     }
     .mainContent {
-        width: 72%;
+        width: 45%;
     }
     nav {
     	/*margin-left: 23.5%;*/
-    	margin-right: 25%;
+    	margin-right: 20%;
     }
     nav a {
 		padding: 0px 20px 20px 20px;
@@ -331,7 +331,7 @@ footer {
         width: 90%;
     }
     .social {
-        width: 75%;
+        width: 45%;
     }
     footer {
         width: 100%;
